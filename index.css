@@ -1,18 +1,15 @@
 body {
   margin: 0;
-  float: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* default layout is for mobile */ 
 .hero-searchbar {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  border: 2px solid red;
   min-height: 589px;
-  /* background: url(./assets/Hero\ -\ Desktop.jpg) no-repeat center;
-  background-size: 100% 220px; */
-  max-width: min-content;
+  max-width: 100%;
 }
 
 .hero-img {
@@ -25,15 +22,19 @@ body {
 }
 
 .hero-container {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 80px;
   text-align: left;
   color: white;
-  border: 2px solid blue;
   background-color: #2b2d33;
 }
 
 .hero-container > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 32px;
   font-weight: bold;
 }
@@ -46,8 +47,8 @@ body {
   text-decoration: underline;
 }
 
-.hero-container > h2 {
-  font-size: 20px;
+.offer-text {
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -76,15 +77,13 @@ body {
   padding-top: 5px;
 }
 
-.hero-offer-tiles {
-  position: absolute;
-  left: 22%;
-  top: 55%;
-}
-
 .flex-container {
+  text-align: left;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 19%;
+  top: 55%;
 }
 
 .flex-container > div {
@@ -98,9 +97,11 @@ body {
   padding-bottom: 30px;
 }
 
+/* when the screen width hits 1440px breakpoint, layout will change to web */
 @media screen and (min-width: 1440px) {
   .hero-searchbar {
     min-height: 746px;
+    max-width: 1440px;
   }
   .hero-img {
     width: 1440px;
@@ -109,19 +110,42 @@ body {
   .hero-container {
     position: relative;
     margin-top: -600px;
+    padding-bottom: 0px;
     left: 10%;
     background-color: transparent;
   }
 
-  .flex-container > div {
-    flex: 1;
+  .hero-container h1 {
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin-bottom:0;
+  }
+
+  .hero-container p {
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  .deals-text {
+    visibility: hidden;
+  }
+
+  .offer-text {
+    color: white;
+    text-align: left;
+    position: relative;
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: bold;
   }
 
   .flex-container {
-    flex-basis: auto;
-    flex-wrap: nowrap;
+    position: relative;
+    left: 0%;
     flex-direction: row;
-    border: 2px solid pink;
+    justify-content: center;
   }
-
 }
