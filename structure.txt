@@ -1,0 +1,35 @@
+DOCTYPE
+head
+
+** begin w small mobile layout and then convert to web page 1440px
+<body>
+    <section> hero with searchbar
+        -background image
+            * min-height: 589px for hero
+            * image height: 220px
+            * width: 100%
+
+        -div.hero-container
+            - h1: primary headline
+            - p: Sub-text, sub copy here. Descriptive of
+                value proposition, action-oriented, and
+                keyword-rich.
+            - p: get the details with underline
+            - searchbar
+            * 30px padding between headings
+            * dark gray background
+            * float left required
+            * margin top...
+    </section>
+    <section> offer w/ tiles
+        - h2: Explore offers from our featured products w/ offers pink
+        - div.financing-tiles
+            - flexbox w/ 4 tile images
+                - img (321x180)
+                - headline (24px, bold)
+                - subheadline (16px, regular)
+                    icon, text
+            - p: View all deals and offers ---> 
+
+    </section>
+</body>
