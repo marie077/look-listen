@@ -5,45 +5,40 @@ body {
 
 /* default layout is for mobile */ 
 .hero-searchbar {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  min-height: 589px;
+  background: url('./assets/Hero\ -\ Desktop.jpg') no-repeat center top;
+  background-size: contain;
+  margin: 0 auto;
   max-width: 100%;
-}
-
-.hero-img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  object-fit: cover;
-  height: 220px;
-  width: 100%;
+  min-height: 589px;
 }
 
 .hero-container {
-  margin: 0;
-  padding: 0;
+  float: left;
+  margin-top: 324px;
   padding-top: 30px;
-  padding-left: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
   text-align: left;
   color: white;
   background-color: #2b2d33;
+  width: 100%;
 }
 
-.hero-container > h1 {
+.hero-headers {
+  padding-left: 30px;
+}
+
+.hero-headers > h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 32px;
   font-weight: bold;
 }
 
-.hero-container > p {
+.hero-headers > p {
   font-size: 20px;
 }
 
-.hero-container > p:nth-child(3) {
+.hero-headers > p:nth-child(3) {
   text-decoration: underline;
 }
 
@@ -77,23 +72,15 @@ body {
   padding-top: 5px;
 }
 
-.flex-container {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-
 .flex-children-container {
-  border: 2px solid blue;
-  width: min-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
   margin: 0 auto;
-}
-
-/* .flex-container > div {
   justify-content: center;
-  border-radius: 10px;
-  margin: 10px;
-} */
+  flex-direction: column;
+  gap: 30px;
+}
 
 .icon-heading {
   display: flex;
@@ -106,15 +93,11 @@ body {
     min-height: 746px;
     max-width: 1440px;
   }
-  .hero-img {
-    width: 1440px;
-    height: 746px;
-  }
   .hero-container {
-    position: relative;
-    margin-top: -600px;
+    margin-top: 185px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-bottom: 0px;
-    left: 10%;
     background-color: transparent;
   }
 
@@ -145,7 +128,7 @@ body {
     font-weight: bold;
   }
 
-  .flex-container {
+  .flex-children-container {
     flex-direction: row;
     justify-content: center;
   }
