@@ -13,7 +13,7 @@ body {
 }
 
 .hero-container {
-  float: left;
+  float: right;
   margin-top: 274px;
   padding-top: 30px;
   padding-bottom: 72px;
@@ -73,6 +73,8 @@ body {
 }
 
 .flex-children-container {
+  position: absolute;
+  top: 645px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -92,31 +94,37 @@ body {
   .hero-searchbar {
     min-height: 746px;
     max-width: 1440px;
+    
   }
   .hero-container {
-    margin-top: 185px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 171px;
     padding-bottom: 0px;
     background-color: transparent;
   }
 
-  .hero-container h1 {
+  .hero-headers h1 {
     font-size: 64px;
     font-weight: bold;
     padding-bottom: 30px;
     margin-bottom:0;
   }
 
-  .hero-container p {
+  .hero-headers p {
     font-size: 24px;
     font-weight: normal;
     padding-top: 0px;
     padding-bottom: 30px;
     margin: 0;
   }
+
+  .hero-headers {
+    padding-left: 127px;
+    padding-top: 21px;
+  }
+  
   .deals-text {
     visibility: hidden;
+    position: absolute;
   }
 
   .offer-text {
@@ -129,6 +137,7 @@ body {
   }
 
   .flex-children-container {
+    position: unset;
     flex-direction: row;
     justify-content: center;
   }
